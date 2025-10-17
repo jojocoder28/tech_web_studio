@@ -8,10 +8,12 @@ export default function Home() {
   return (
     <main className="flex-1">
       <Hero />
-      <About />
-      <Projects />
-      <AiSuggester />
-      <Contact />
+      <div className="animate-fade-in-up">
+        <About />
+        <Projects />
+        <AiSuggester />
+        <Contact />
+      </div>
     </main>
   );
 }

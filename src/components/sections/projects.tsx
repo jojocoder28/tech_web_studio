@@ -42,7 +42,7 @@ export function Projects() {
           {projects.map((project) => {
             const projectImage = PlaceHolderImages.find(img => img.id === project.id);
             return (
-              <Card key={project.id} className="overflow-hidden flex flex-col group">
+              <Card key={project.id} className="overflow-hidden flex flex-col group transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
                 <CardHeader>
                   <CardTitle className="font-headline">{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
