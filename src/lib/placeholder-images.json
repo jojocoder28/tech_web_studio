@@ -7,10 +7,10 @@
       "imageHint": "abstract technology"
     },
     {
-      "id": "swarnadeep-das-portrait",
-      "description": "Portrait of Swarnadeep Das",
+      "id": "about-us-image",
+      "description": "A modern office space with developers working",
       "imageUrl": "https://picsum.photos/seed/101/500/500",
-      "imageHint": "male portrait"
+      "imageHint": "team working"
     },
     {
       "id": "project-1",

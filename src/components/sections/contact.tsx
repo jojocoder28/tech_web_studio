@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
-import { Loader2, Mail, Phone, User } from "lucide-react";
+import { Loader2, Mail, Phone, User, MapPin } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
 
 export function Contact() {
@@ -60,26 +60,26 @@ export function Contact() {
             <div className="flex flex-col space-y-6 justify-center">
                 <h3 className="text-2xl font-bold font-headline">Contact Information</h3>
                 <p className="text-muted-foreground">
-                    You can reach me via email or phone. I'm always open to discussing new projects and opportunities.
+                    You can reach us via email or phone. We are always open to discussing new projects and opportunities.
                 </p>
                 <div className="space-y-4">
                     <div className="flex items-center gap-4">
                         <Mail className="w-5 h-5 text-primary" />
-                        <a href="mailto:swarnadeep@example.com" className="text-muted-foreground hover:text-primary">swarnadeep@example.com</a>
+                        <a href="mailto:dasjojo7@gmail.com" className="text-muted-foreground hover:text-primary">dasjojo7@gmail.com</a>
                     </div>
                      <div className="flex items-center gap-4">
                         <Phone className="w-5 h-5 text-primary" />
-                        <span className="text-muted-foreground">+1 (234) 567-890</span>
+                        <span className="text-muted-foreground">+91 6296108409</span>
                     </div>
                      <div className="flex items-center gap-4">
-                        <User className="w-5 h-5 text-primary" />
-                        <span className="text-muted-foreground">Based in Your City, World</span>
+                        <MapPin className="w-5 h-5 text-primary" />
+                        <span className="text-muted-foreground">Kolkata, West Bengal, India</span>
                     </div>
                 </div>
             </div>
             <Card>
                 <CardHeader>
-                    <CardTitle className="font-headline">Send me a message</CardTitle>
+                    <CardTitle className="font-headline">Send us a message</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <Form {...form}>

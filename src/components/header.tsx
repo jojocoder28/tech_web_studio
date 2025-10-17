@@ -7,7 +7,7 @@ export function Header() {
     <header className="px-4 lg:px-6 h-16 flex items-center sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <Link href="#" className="flex items-center justify-center" prefetch={false}>
         <CodeXml className="h-6 w-6 text-primary" />
-        <span className="ml-2 text-lg font-headline font-semibold">SD Web Solutions</span>
+        <span className="ml-2 text-lg font-headline font-semibold">Tech Web Studio</span>
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
         <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
@@ -23,7 +23,7 @@ export function Header() {
           AI Tool
         </Link>
         <Button asChild>
-            <Link href="#contact">Contact Me</Link>
+            <Link href="#contact">Contact Us</Link>
         </Button>
       </nav>
     </header>

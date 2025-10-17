@@ -5,8 +5,8 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'SD Web Solutions | Custom Web Development',
-  description: "Swarnadeep Das's portfolio for creating customized websites for local businesses.",
+  title: 'Tech Web Studio | Custom Web Development',
+  description: "Tech Web Studio's portfolio for creating customized websites for local businesses.",
 };
 
 export default function RootLayout({
