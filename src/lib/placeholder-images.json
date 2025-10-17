@@ -15,19 +15,19 @@
     {
       "id": "project-4",
       "description": "Screenshot of a bank loan management dashboard",
-      "imageUrl": "https://picsum.photos/seed/105/600/400",
+      "imageUrl": "https://www.cflowapps.com/wp-content/uploads/2022/12/lon_mangmntprcs.jpg",
       "imageHint": "finance dashboard"
     },
     {
       "id": "project-5",
       "description": "Screenshot of a restaurant order management interface",
-      "imageUrl": "https://picsum.photos/seed/106/600/400",
+      "imageUrl": "https://www.bdtask.com/sp/bhojon/image/bhojon-all-in-one-restaurant-management-software.webp",
       "imageHint": "restaurant dashboard"
     },
     {
       "id": "project-6",
       "description": "Screenshot of an elearning platform",
-      "imageUrl": "https://picsum.photos/seed/107/600/400",
+      "imageUrl": "https://cdn.elearningindustry.com/wp-content/uploads/2022/01/shutterstock_1060195475.jpg",
       "imageHint": "elearning platform"
     }
   ]
