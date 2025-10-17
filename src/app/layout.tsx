@@ -5,8 +5,8 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'Tech Web Studio | Custom Web Development',
-  description: "Tech Web Studio's portfolio for creating customized websites for local businesses.",
+  title: 'Tech Web Studio | Building Digital Identities for Local Businesses',
+  description: "Tech Web Studio specializes in building modern, professional websites that create strong digital identities for local businesses.",
 };
 
 export default function RootLayout({

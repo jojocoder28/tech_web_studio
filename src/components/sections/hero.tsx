@@ -25,7 +25,7 @@ export function Hero() {
             Tech Web Studio
           </h1>
           <p className="max-w-[700px] mx-auto text-primary-foreground/90 md:text-xl">
-            We build modern, responsive, and customized websites for local businesses to help them grow and succeed online.
+            Building Digital Identities for Local Businesses
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
