@@ -1,7 +1,8 @@
 "use client";
 
 import React from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useFormStatus } from 'react-dom';
+import { useActionState } from 'react';
 import { getAIStyleSuggestion, type AIFormState } from '@/app/actions';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -22,7 +23,7 @@ function SubmitButton() {
 
 export function AiSuggester() {
   const initialState: AIFormState = { message: '', suggestion: undefined, error: undefined };
-  const [state, formAction] = useFormState(getAIStyleSuggestion, initialState);
+  const [state, formAction] = useActionState(getAIStyleSuggestion, initialState);
 
   const [imagePreview, setImagePreview] = React.useState<string | null>(null);
 
