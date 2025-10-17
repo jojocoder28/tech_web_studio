@@ -5,6 +5,9 @@ import { z } from 'zod';
 import { generateStyleSuggestion } from '@/ai/flows/ai-style-suggestion';
 import type { AIStyleSuggestionOutput } from '@/ai/flows/ai-style-suggestion';
 import { contactSchema } from '@/lib/schemas';
+import { Resend } from 'resend';
+import { ContactFormEmail } from '@/emails/contact-form-email';
+import React from 'react';
 
 // AI Style Suggestion Action
 export type AIFormState = {
@@ -55,9 +58,29 @@ export async function submitContactForm(data: z.infer<typeof contactSchema>) {
     return { success: false, message: 'Invalid data provided.' };
   }
 
-  // For demonstration, we'll just log the data.
-  // In a real application, you would send an email or save to a database.
-  console.log('New contact form submission:', validatedFields.data);
+  const { name, email, message } = validatedFields.data;
 
-  return { success: true, message: 'Your message has been sent successfully!' };
+  if (!process.env.RESEND_API_KEY) {
+      console.error('Resend API key is not set.');
+      return { success: false, message: 'Server configuration error: Email could not be sent.' };
+  }
+
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
+  try {
+    await resend.emails.send({
+      from: 'Contact Form <onboarding@resend.dev>',
+      to: 'dasjojo7@gmail.com',
+      subject: 'New Message from Tech Web Studio Contact Form',
+      react: React.createElement(ContactFormEmail, {
+        name,
+        email,
+        message,
+      }),
+    });
+    return { success: true, message: 'Your message has been sent successfully!' };
+  } catch (error) {
+    console.error('Email sending error:', error);
+    return { success: false, message: 'There was a problem sending your message. Please try again later.' };
+  }
 }
