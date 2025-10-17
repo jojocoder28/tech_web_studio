@@ -29,24 +29,6 @@
       "description": "Screenshot of a restaurant booking website",
       "imageUrl": "https://picsum.photos/seed/104/600/400",
       "imageHint": "restaurant website"
-    },
-    {
-      "id": "client-1-avatar",
-      "description": "Avatar for Jane Doe",
-      "imageUrl": "https://picsum.photos/seed/105/100/100",
-      "imageHint": "woman portrait"
-    },
-    {
-      "id": "client-2-avatar",
-      "description": "Avatar for John Smith",
-      "imageUrl": "https://picsum.photos/seed/106/100/100",
-      "imageHint": "man portrait"
-    },
-    {
-      "id": "client-3-avatar",
-      "description": "Avatar for Emily Jones",
-      "imageUrl": "https://picsum.photos/seed/107/100/100",
-      "imageHint": "person smiling"
     }
   ]
 }

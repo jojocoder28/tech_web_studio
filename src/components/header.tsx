@@ -16,9 +16,6 @@ export function Header() {
         <Link href="#projects" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
           Projects
         </Link>
-        <Link href="#testimonials" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-          Testimonials
-        </Link>
         <Link href="#ai-tool" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
           AI Tool
         </Link>
