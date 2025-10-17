@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Abstract background with blue and purple tones",
+      "imageUrl": "https://picsum.photos/seed/100/1920/1080",
+      "imageHint": "abstract technology"
+    },
+    {
+      "id": "swarnadeep-das-portrait",
+      "description": "Portrait of Swarnadeep Das",
+      "imageUrl": "https://picsum.photos/seed/101/500/500",
+      "imageHint": "male portrait"
+    },
+    {
+      "id": "project-1",
+      "description": "Screenshot of a modern e-commerce website",
+      "imageUrl": "https://picsum.photos/seed/102/600/400",
+      "imageHint": "website screenshot"
+    },
+    {
+      "id": "project-2",
+      "description": "Screenshot of a clean blog layout",
+      "imageUrl": "https://picsum.photos/seed/103/600/400",
+      "imageHint": "blog layout"
+    },
+    {
+      "id": "project-3",
+      "description": "Screenshot of a restaurant booking website",
+      "imageUrl": "https://picsum.photos/seed/104/600/400",
+      "imageHint": "restaurant website"
+    },
+    {
+      "id": "client-1-avatar",
+      "description": "Avatar for Jane Doe",
+      "imageUrl": "https://picsum.photos/seed/105/100/100",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "client-2-avatar",
+      "description": "Avatar for John Smith",
+      "imageUrl": "https://picsum.photos/seed/106/100/100",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "client-3-avatar",
+      "description": "Avatar for Emily Jones",
+      "imageUrl": "https://picsum.photos/seed/107/100/100",
+      "imageHint": "person smiling"
+    }
+  ]
 }
