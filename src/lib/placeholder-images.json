@@ -13,24 +13,6 @@
       "imageHint": "team working"
     },
     {
-      "id": "project-1",
-      "description": "Screenshot of a modern e-commerce website",
-      "imageUrl": "https://picsum.photos/seed/102/600/400",
-      "imageHint": "website screenshot"
-    },
-    {
-      "id": "project-2",
-      "description": "Screenshot of a clean blog layout",
-      "imageUrl": "https://picsum.photos/seed/103/600/400",
-      "imageHint": "blog layout"
-    },
-    {
-      "id": "project-3",
-      "description": "Screenshot of a restaurant booking website",
-      "imageUrl": "https://picsum.photos/seed/104/600/400",
-      "imageHint": "restaurant website"
-    },
-    {
       "id": "project-4",
       "description": "Screenshot of a bank loan management dashboard",
       "imageUrl": "https://picsum.photos/seed/105/600/400",
@@ -41,6 +23,12 @@
       "description": "Screenshot of a restaurant order management interface",
       "imageUrl": "https://picsum.photos/seed/106/600/400",
       "imageHint": "restaurant dashboard"
+    },
+    {
+      "id": "project-6",
+      "description": "Screenshot of an elearning platform",
+      "imageUrl": "https://picsum.photos/seed/107/600/400",
+      "imageHint": "elearning platform"
     }
   ]
 }

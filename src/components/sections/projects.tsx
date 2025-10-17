@@ -8,24 +8,6 @@ import { ArrowRight } from "lucide-react"
 export function Projects() {
   const projects = [
     {
-      id: "project-1",
-      title: "E-Commerce Platform",
-      description: "A full-featured online store for a local boutique, with inventory management and secure payments.",
-      link: "#",
-    },
-    {
-      id: "project-2",
-      title: "Writer's Blog & Portfolio",
-      description: "A clean, minimalist blog and portfolio site for a freelance writer, focusing on readability and content.",
-      link: "#",
-    },
-    {
-      id: "project-3",
-      title: "Restaurant Booking Site",
-      description: "A responsive website for a local restaurant, featuring online reservations and menu display.",
-      link: "#",
-    },
-    {
       id: "project-4",
       title: "Bank Loan Management",
       description: "A comprehensive application for managing bank loans, streamlining the process for both customers and staff.",
@@ -36,6 +18,12 @@ export function Projects() {
       title: "Restaurant Management System",
       description: "An integrated app for restaurant order and inventory management to enhance operational efficiency.",
       link: "https://bhinnashad.com/",
+    },
+    {
+      id: "project-6",
+      title: "Elearning Platform",
+      description: "An online learning platform with courses, and progress tracking.",
+      link: "https://elearningwebsite.onrender.com/",
     },
   ];
 
