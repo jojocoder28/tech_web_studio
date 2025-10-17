@@ -29,6 +29,18 @@
       "description": "Screenshot of a restaurant booking website",
       "imageUrl": "https://picsum.photos/seed/104/600/400",
       "imageHint": "restaurant website"
+    },
+    {
+      "id": "project-4",
+      "description": "Screenshot of a bank loan management dashboard",
+      "imageUrl": "https://picsum.photos/seed/105/600/400",
+      "imageHint": "dashboard analytics"
+    },
+    {
+      "id": "project-5",
+      "description": "Screenshot of a restaurant order management interface",
+      "imageUrl": "https://picsum.photos/seed/106/600/400",
+      "imageHint": "restaurant order"
     }
   ]
 }

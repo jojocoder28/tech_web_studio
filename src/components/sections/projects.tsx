@@ -25,6 +25,18 @@ export function Projects() {
       description: "A responsive website for a local restaurant, featuring online reservations and menu display.",
       link: "#",
     },
+    {
+      id: "project-4",
+      title: "Bank Loan Management",
+      description: "A comprehensive application for managing bank loans, streamlining the process for both customers and staff.",
+      link: "https://skgppst.vercel.app/",
+    },
+    {
+      id: "project-5",
+      title: "Restaurant Management System",
+      description: "An integrated app for restaurant order and inventory management to enhance operational efficiency.",
+      link: "https://bhinnashad.com/",
+    },
   ];
 
   return (
@@ -63,7 +75,7 @@ export function Projects() {
                 </CardContent>
                 <CardFooter>
                   <Button variant="link" asChild className="p-0 h-auto">
-                    <Link href={project.link}>
+                    <Link href={project.link} target="_blank" rel="noopener noreferrer">
                       View Project
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
