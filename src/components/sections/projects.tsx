@@ -58,7 +58,7 @@ export function Projects() {
                   const projectImage = PlaceHolderImages.find(img => img.id === project.id);
                   return (
                     <CarouselItem key={project.id} className="md:basis-1/2 lg:basis-1/3">
-                      <div className="p-1">
+                      <div className="p-1 h-full">
                         <Card className="overflow-hidden flex flex-col group h-full transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
                           <CardHeader>
                             <CardTitle className="font-headline">{project.title}</CardTitle>
