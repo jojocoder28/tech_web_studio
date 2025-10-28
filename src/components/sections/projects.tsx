@@ -4,9 +4,16 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 
 export function Projects() {
   const projects = [
+    {
+      id: "project-7",
+      title: "AI Resume Optimizer",
+      description: "An AI-powered platform to optimize and build professional resumes, helping users land their dream jobs.",
+      link: "https://airesume-cv.vercel.app/",
+    },
     {
       id: "project-4",
       title: "Bank Loan Management",
@@ -38,40 +45,56 @@ export function Projects() {
             </p>
           </div>
         </div>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
-          {projects.map((project) => {
-            const projectImage = PlaceHolderImages.find(img => img.id === project.id);
-            return (
-              <Card key={project.id} className="overflow-hidden flex flex-col group transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-                <CardHeader>
-                  <CardTitle className="font-headline">{project.title}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  {projectImage && (
-                    <div className="overflow-hidden rounded-lg">
-                      <Image
-                        src={projectImage.imageUrl}
-                        alt={project.title}
-                        width={600}
-                        height={400}
-                        className="object-cover w-full h-full aspect-video transition-transform duration-500 group-hover:scale-105"
-                        data-ai-hint={projectImage.imageHint}
-                      />
-                    </div>
-                  )}
-                </CardContent>
-                <CardFooter>
-                  <Button variant="link" asChild className="p-0 h-auto">
-                    <Link href={project.link} target="_blank" rel="noopener noreferrer">
-                      View Project
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardFooter>
-              </Card>
-            );
-          })}
+        <div className="relative mt-12">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {projects.map((project) => {
+                  const projectImage = PlaceHolderImages.find(img => img.id === project.id);
+                  return (
+                    <CarouselItem key={project.id} className="md:basis-1/2 lg:basis-1/3">
+                      <div className="p-1">
+                        <Card className="overflow-hidden flex flex-col group h-full transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+                          <CardHeader>
+                            <CardTitle className="font-headline">{project.title}</CardTitle>
+                            <CardDescription>{project.description}</CardDescription>
+                          </CardHeader>
+                          <CardContent className="flex-grow">
+                            {projectImage && (
+                              <div className="overflow-hidden rounded-lg">
+                                <Image
+                                  src={projectImage.imageUrl}
+                                  alt={project.title}
+                                  width={600}
+                                  height={400}
+                                  className="object-cover w-full h-full aspect-video transition-transform duration-500 group-hover:scale-105"
+                                  data-ai-hint={projectImage.imageHint}
+                                />
+                              </div>
+                            )}
+                          </CardContent>
+                          <CardFooter>
+                            <Button variant="link" asChild className="p-0 h-auto">
+                              <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                                View Project
+                                <ArrowRight className="ml-2 h-4 w-4" />
+                              </Link>
+                            </Button>
+                          </CardFooter>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+              <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-8 hidden md:flex" />
+              <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-8 hidden md:flex" />
+            </Carousel>
         </div>
       </div>
     </section>
