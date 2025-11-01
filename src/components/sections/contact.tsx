@@ -64,7 +64,7 @@ export function Contact() {
                   <InfoItem icon={<MapPin className="w-5 h-5 text-primary" />} label="Location" value="Kolkata, West Bengal, India" />
               </div>
           </div>
-          <Card className="p-2 bg-card/50 backdrop-blur-sm border-border/50">
+          <Card className="p-2 bg-card/50 dark:bg-card/50 backdrop-blur-sm border-border/50 dark:border-border/50">
               <CardContent className="p-6">
                   <Form {...form}>
                       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">

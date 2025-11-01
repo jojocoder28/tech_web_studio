@@ -42,7 +42,7 @@ export function AIStyler() {
           </p>
         </div>
         <div className="mx-auto mt-12 grid max-w-4xl gap-8 lg:grid-cols-2 lg:gap-12">
-          <Card className="p-2 bg-card/50 backdrop-blur-sm border-border/50">
+          <Card className="p-2 bg-card/50 dark:bg-card/50 backdrop-blur-sm border-border/50 dark:border-border/50">
             <CardContent className="p-6">
               <form action={formAction} className="space-y-6">
                 <div className="space-y-2">
