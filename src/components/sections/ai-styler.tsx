@@ -1,11 +1,12 @@
 "use client";
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { getAIStyleSuggestion, type AIFormState } from '@/app/actions';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Card, CardContent } from '@/components/ui/card';
 import { Loader2, Wand2 } from 'lucide-react';
 import React from 'react';
@@ -25,7 +26,7 @@ function SubmitButton() {
 }
 
 export function AIStyler() {
-  const [state, formAction] = useFormState(getAIStyleSuggestion, initialState);
+  const [state, formAction] = useActionState(getAIStyleSuggestion, initialState);
 
   return (
     <section id="ai-styler" className="w-full bg-secondary/30">
