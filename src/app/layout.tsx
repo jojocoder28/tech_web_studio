@@ -4,7 +4,6 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { ThemeProvider } from '@/components/theme-provider';
-import { MouseStalker } from '@/components/mouse-stalker';
 
 export const metadata: Metadata = {
   title: 'Tech Web Studio | Building Digital Identities for Local Businesses',
@@ -24,19 +23,16 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
-        <MouseStalker />
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
         >
-          <div className="relative z-20">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-            <Toaster />
-          </div>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

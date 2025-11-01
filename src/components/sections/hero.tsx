@@ -5,7 +5,10 @@ export function Hero() {
 
   return (
     <section className="relative w-full h-[85vh] min-h-[600px] flex items-center justify-center text-center -mt-20 pt-20 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-transparent z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float opacity-50" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-secondary/30 rounded-full blur-3xl animate-float animation-delay-3000 opacity-50" />
+      </div>
       <div className="absolute inset-0 bg-grid-pattern opacity-5" />
       <div className="absolute inset-0 bg-gradient-radial from-transparent to-background" />
 
