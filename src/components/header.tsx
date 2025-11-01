@@ -2,39 +2,43 @@ import Link from "next/link"
 import { CodeXml, Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
+import { ThemeToggle } from "./theme-toggle"
 
 export function Header() {
   const navLinks = [
     { href: "#about", label: "About" },
-    { href: "#projects", label: "Projects" },
-    { href: "#ai-tool", label: "AI Tool" },
+    { href: "#services", label: "Services" },
+    { href: "#portfolio", label: "Portfolio" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
-    <header className="px-4 lg:px-6 h-16 flex items-center sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="px-4 lg:px-6 h-20 flex items-center sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-xl">
       <Link href="#" className="flex items-center justify-center" prefetch={false}>
         <CodeXml className="h-6 w-6 text-primary" />
-        <span className="ml-2 text-lg font-headline font-semibold">Tech Web Studio</span>
+        <span className="ml-3 text-xl font-headline font-semibold">Tech Web Studio</span>
       </Link>
-      <nav className="ml-auto hidden md:flex gap-4 sm:gap-6 items-center">
+      <nav className="ml-auto hidden md:flex gap-6 lg:gap-8 items-center">
         {navLinks.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className="text-sm font-medium hover:underline underline-offset-4"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             prefetch={false}
           >
             {link.label}
           </Link>
         ))}
-        <Button asChild>
-            <Link href="#contact">Contact Us</Link>
+         <ThemeToggle />
+        <Button asChild size="sm">
+            <Link href="#contact">Get in Touch</Link>
         </Button>
       </nav>
       <div className="ml-auto md:hidden">
+         <ThemeToggle />
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="ml-2">
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
@@ -59,7 +63,7 @@ export function Header() {
                 </Link>
               ))}
                <Button asChild>
-                <Link href="#contact">Contact Us</Link>
+                <Link href="#contact">Get in Touch</Link>
               </Button>
             </nav>
           </SheetContent>

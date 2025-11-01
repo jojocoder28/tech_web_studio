@@ -4,7 +4,7 @@ import { Button } from "./ui/button"
 
 export function Footer() {
   return (
-    <footer className="bg-muted py-6 w-full">
+    <footer className="bg-background py-8 w-full border-t border-border/20">
       <div className="container mx-auto px-4 md:px-6 flex flex-col sm:flex-row items-center justify-between">
         <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Tech Web Studio. All rights reserved.</p>
         <div className="flex items-center gap-4 mt-4 sm:mt-0">
