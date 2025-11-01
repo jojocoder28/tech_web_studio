@@ -20,7 +20,7 @@ export function MouseStalker() {
 
   return (
     <motion.div
-      className="pointer-events-none fixed left-0 top-0 z-50 hidden h-[400px] w-[400px] rounded-full bg-primary/5 blur-[100px] backdrop-filter backdrop-invert-[5%] md:block"
+      className="pointer-events-none fixed left-0 top-0 z-10 hidden h-[400px] w-[400px] rounded-full bg-primary/5 blur-[100px] backdrop-filter backdrop-invert-[5%] md:block"
       style={{
         translateX: '-50%',
         translateY: '-50%',
