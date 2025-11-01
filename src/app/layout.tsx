@@ -4,6 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { ThemeProvider } from '@/components/theme-provider';
+import { MouseStalker } from '@/components/mouse-stalker';
 
 export const metadata: Metadata = {
   title: 'Tech Web Studio | Building Digital Identities for Local Businesses',
@@ -29,6 +30,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
+          <MouseStalker />
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
