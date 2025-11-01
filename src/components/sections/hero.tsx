@@ -14,7 +14,7 @@ export function Hero() {
 
       <div className="relative container mx-auto px-4 md:px-6 z-20">
         <div className="grid gap-8 animate-fade-in-up">
-          <h1 className="text-4xl font-headline font-bold tracking-tighter text-primary-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="text-4xl font-headline font-bold tracking-tighter text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
             Building Digital Identities
           </h1>
           <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
