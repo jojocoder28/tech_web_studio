@@ -68,7 +68,7 @@ export function Services() {
               viewport={{ once: true, amount: 0.5 }}
               variants={cardVariants}
             >
-              <Card className="h-full text-center transition-all duration-300 hover:bg-card/80 hover:-translate-y-2 border-border/50">
+              <Card className="h-full text-center transition-all duration-300 hover:-translate-y-2 border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader className="items-center">
                   <div className="p-4 bg-secondary rounded-full mb-4">
                     <service.icon className="w-8 h-8 text-primary" />

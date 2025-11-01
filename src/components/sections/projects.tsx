@@ -50,7 +50,7 @@ export function Projects() {
             const projectImage = PlaceHolderImages.find(img => img.id === project.id);
             return (
               <Link key={project.id} href={project.link} target="_blank" rel="noopener noreferrer" className="group block">
-                <Card className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:shadow-primary/10 border-border/50">
+                <Card className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:shadow-primary/10 border-border/50 bg-card/50 backdrop-blur-sm">
                   <CardHeader className="p-0">
                     {projectImage && (
                       <div className="overflow-hidden aspect-video">
