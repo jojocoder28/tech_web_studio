@@ -24,17 +24,19 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
+        <MouseStalker />
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
         >
-          <MouseStalker />
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <Toaster />
+          <div className="relative z-20">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <Toaster />
+          </div>
         </ThemeProvider>
       </body>
     </html>
